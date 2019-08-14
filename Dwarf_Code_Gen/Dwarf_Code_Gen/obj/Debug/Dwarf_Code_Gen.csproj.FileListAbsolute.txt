@@ -1,0 +1,7 @@
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarfs\Dwarf_Code_Gen\Dwarf_Code_Gen\bin\Debug\Dwarf_Code_Gen.exe.config
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarfs\Dwarf_Code_Gen\Dwarf_Code_Gen\bin\Debug\Dwarf_Code_Gen.exe
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarfs\Dwarf_Code_Gen\Dwarf_Code_Gen\bin\Debug\Dwarf_Code_Gen.pdb
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarfs\Dwarf_Code_Gen\Dwarf_Code_Gen\obj\Debug\Dwarf_Code_Gen.csprojAssemblyReference.cache
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarfs\Dwarf_Code_Gen\Dwarf_Code_Gen\obj\Debug\Dwarf_Code_Gen.csproj.CoreCompileInputs.cache
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarfs\Dwarf_Code_Gen\Dwarf_Code_Gen\obj\Debug\Dwarf_Code_Gen.exe
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarfs\Dwarf_Code_Gen\Dwarf_Code_Gen\obj\Debug\Dwarf_Code_Gen.pdb
