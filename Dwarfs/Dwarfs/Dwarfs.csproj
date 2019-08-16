@@ -58,6 +58,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="GameField.cs" />
+    <Compile Include="Village.cs" />
+    <Page Include="Field.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -66,10 +72,21 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Field.xaml.cs">
+      <DependentUpon>Field.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="Styles\Field_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Titelbar_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -96,6 +113,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Titelbar_Backgrounds\Close_Small_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Titelbar_Backgrounds\Close_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Titelbar_Backgrounds\Close_Small_MouseOver_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Titelbar_Backgrounds\Minimize_Background.png" />
+    <Resource Include="Pictures\Titelbar_Backgrounds\Minimize_MouseOver_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Titelbar_Backgrounds\Close_Small_Highlite_MouseOver_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\Stone.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\comic_Mini.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\pexels-photo-355747.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

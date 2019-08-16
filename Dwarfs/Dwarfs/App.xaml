@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:Dwarfs"
              >
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Field_Styles.xaml"/>
+                <ResourceDictionary Source="Styles/Titelbar_Styles.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

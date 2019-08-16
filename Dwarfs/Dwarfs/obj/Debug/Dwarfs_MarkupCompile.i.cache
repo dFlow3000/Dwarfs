@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarfs\Dwarfs\Dwarfs\obj\Debug\
+D:\Dwarfs_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\
 Dwarfs
 none
 false
 DEBUG;TRACE
-C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarfs\Dwarfs\Dwarfs\App.xaml
-11151548125
+D:\Dwarfs_Repo\Dwarfs\Dwarfs\Dwarfs\App.xaml
+4-174119444
 
-9531643283
+12-2078670614
 16953295066
-MainWindow.xaml;
+Field.xaml;MainWindow.xaml;Styles\Field_Styles.xaml;Styles\Titelbar_Styles.xaml;
 
-True
+False
 

@@ -5,9 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Dwarfs"
         mc:Ignorable="d"
-        WindowStartupLocation="Manual"
+        Loaded="MainWindow_Loaded"
+        WindowStyle="None"
+        WindowState="Normal"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
         Title="MainWindow" Height="600" Width="1100">
+    <Window.Background>
+        <ImageBrush ImageSource="Pictures/Background/pexels-photo-355747.png"/>
+    </Window.Background>
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="600"/>
+            <ColumnDefinition Width="500"/>
+        </Grid.ColumnDefinitions>
+        <ContentControl x:Name="ConCont_Field" Content="" HorizontalAlignment="Left" VerticalAlignment="Bottom" Height="550" Width="600" Background="#FF7E7E7E" Margin="0,0,0,12"/>
+        <Canvas x:Name="CNVS_Titlebar" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="1100" Grid.ColumnSpan="2" MouseLeftButtonDown="DragAndDrop_Titelbar">
+            <Rectangle Fill="Black" Height="30" Stroke="Black" Width="1100"/>
+            <Grid Height="30" Width="1100">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="5"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="990"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="5"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="BTN_TB_CLOSE" Content="" Grid.Column="4" Style="{StaticResource Close_Titelbar_Button}" FontSize="28" Click="BTN_TB_CLOSE_Click"/>
+                <Button x:Name="BTN_TB_MIN" Content="-" Grid.Column="3" Style="{StaticResource Minimize_Titelbar_Button}" FontSize="28" Click="BTN_TB_MIN_Click"/>
+            </Grid>
+
+        </Canvas>
+
+
     </Grid>
 </Window>
