@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/background/pexels-photo-355747.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/background/gamefield_backgrounds/type_goblin_land_1.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/background/gamefield_backgrounds/type_goblin_land_2.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("pictures/background/gamefield_backgrounds/type_village_ground.png")]
 
 

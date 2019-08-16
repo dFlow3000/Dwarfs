@@ -28,11 +28,11 @@
         </Style.Triggers>
     </Style>
 
-    <Style x:Key="Default_Field_Button_BASIS" TargetType="Button">
+    <Style x:Key="Base_Field_Button" TargetType="Button">
         <Setter Property="FontFamily" Value="Arial"/>
         <Setter Property="Background">
             <Setter.Value>
-                <SolidColorBrush Color="#FF51FF00" Opacity="0.7"/>
+                <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/Type_Base.png"/>
             </Setter.Value>
         </Setter>
         <Setter Property="Template">
@@ -50,7 +50,11 @@
         </Setter>
         <Style.Triggers>
             <Trigger Property="IsMouseOver" Value="True">
-                <Setter Property="Background" Value="#FFAEFF00"/>
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/MOUSEOVER_Type_Base.png"/>
+                    </Setter.Value>
+                </Setter>
             </Trigger>
         </Style.Triggers>
     </Style>
@@ -81,6 +85,193 @@
             </Trigger>
         </Style.Triggers>
     </Style>
+
+    <Style x:Key="Goblin_Land_Field_Button" TargetType="Button">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/Type_Goblin_Land_1.png"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="1">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="Black"/>
+                        </Border.BorderBrush>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/MOUSEOVER_Type_Goblin_Land_1.png"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Goblin_Land_2_Field_Button" TargetType="Button">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/Type_Goblin_Land_2.png"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="1">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="Black"/>
+                        </Border.BorderBrush>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/MOUSEOVER_Type_Goblin_Land_2.png"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Stone_Wall_Field_Button" TargetType="Button">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/Type_Stone_Wall.png"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="1">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="Black"/>
+                        </Border.BorderBrush>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/MOSUEOVER_Type_Stone_Wall.png"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Village_Ground_Field_Button" TargetType="Button">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/Type_Village_Ground.png"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="1">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="Black"/>
+                        </Border.BorderBrush>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/MOUSEOVER_Type_Village_Ground.png"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    
+    <Style x:Key="Gold_Mine_Field_Button" TargetType="Button">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/Type_Gold_Mine.png"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="1">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="Black"/>
+                        </Border.BorderBrush>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/MOUSEOVER_Type_Gold_Mine.png"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="Stone_Quarry_Field_Button" TargetType="Button">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/Type_Stone_Quarry.png"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="1">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="Black"/>
+                        </Border.BorderBrush>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/MOUSEOVER_Type_Stone_Quarry.png"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
 
 
 </ResourceDictionary>

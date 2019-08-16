@@ -58,9 +58,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Const.cs" />
+    <Compile Include="Coords.cs" />
+    <Compile Include="Game.cs" />
     <Compile Include="GameField.cs" />
+    <Compile Include="Part.cs" />
     <Compile Include="Village.cs" />
-    <Page Include="Field.xaml">
+    <Compile Include="VillageGenerator.cs" />
+    <Page Include="UC_Field.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -72,8 +77,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Field.xaml.cs">
-      <DependentUpon>Field.xaml</DependentUpon>
+    <Compile Include="UC_Field.xaml.cs">
+      <DependentUpon>UC_Field.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -131,13 +136,35 @@
     <Resource Include="Pictures\Titelbar_Backgrounds\Close_Small_Highlite_MouseOver_Background.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pictures\Background\Stone.jpg" />
+    <Resource Include="Pictures\Background\Main_Window_Backgrounds\Stone.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pictures\Background\comic_Mini.jpg" />
+    <Resource Include="Pictures\Background\Main_Window_Backgrounds\comic_Mini.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pictures\Background\pexels-photo-355747.png" />
+    <Resource Include="Pictures\Background\Main_Window_Backgrounds\pexels-photo-355747.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Stone_Wall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Base.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\MOSUEOVER_Type_Stone_Wall.png" />
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\MOUSEOVER_Type_Base.png" />
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\MOUSEOVER_Type_Goblin_Land_1.png" />
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\MOUSEOVER_Type_Goblin_Land_2.png" />
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\MOUSEOVER_Type_Gold_Mine.png" />
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\MOUSEOVER_Type_Stone_Quarry.png" />
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\MOUSEOVER_Type_Village_Ground.png" />
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Gold_Mine.png" />
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Stone_Quarry.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Goblin_Land_1.png" />
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Goblin_Land_2.png" />
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Village_Ground.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

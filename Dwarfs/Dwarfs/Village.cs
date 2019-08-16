@@ -8,5 +8,15 @@ namespace Dwarfs
 {
     class Village
     {
+        public int[] startCorner = new int[2];
+        public int wallLenght = 0;
+
+        public Village(int startCorner_X, int startCorner_Y, int i_wallLenght)
+        {
+            startCorner[0] = startCorner_X;
+            startCorner[1] = startCorner_Y;
+            wallLenght = i_wallLenght;
+        }
+
     }
 }

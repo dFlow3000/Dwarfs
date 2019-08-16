@@ -45,7 +45,7 @@ namespace Dwarf_Code_Gen
             {
                 for (int x = 0; x < 50; x++)
                 {
-                    Console.WriteLine("GameFieldButton[" + idx.ToString() + "] = GRID_" + (i < 10 ? "0" : "") + i.ToString() + "I" + (x < 10 ? "0" : "") + x.ToString() + ";");
+                    Console.WriteLine("GameFieldButton[" + i.ToString() + "," + x.ToString() + "] = GRID_" + (i < 10 ? "0" : "") + i.ToString() + "I" + (x < 10 ? "0" : "") + x.ToString() + ";");
                     idx++;
                 }
             }

@@ -27,9 +27,9 @@ namespace Dwarfs
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            UserControl uc_Field = new Field();
+            UserControl uc_Field = new UC_Field();
             ConCont_Field.Content = uc_Field;
-            GRIDS
+            Game game = new Game();
         }
 
         private void BTN_TB_CLOSE_Click(object sender, RoutedEventArgs e)
