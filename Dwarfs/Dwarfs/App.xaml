@@ -8,7 +8,20 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary Source="Styles/Field_Styles.xaml"/>
                 <ResourceDictionary Source="Styles/Titelbar_Styles.xaml"/>
+                <ResourceDictionary Source="Styles/Slider_Styles.xaml"/>
             </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+            <BitmapImage x:Key="Clock_60" UriSource="Pictures/Clock/60.png"/>
+            <BitmapImage x:Key="Clock_55" UriSource="Pictures/Clock/55.png"/>
+            <BitmapImage x:Key="Clock_50" UriSource="Pictures/Clock/50.png"/>
+            <BitmapImage x:Key="Clock_45" UriSource="Pictures/Clock/45.png"/>
+            <BitmapImage x:Key="Clock_40" UriSource="Pictures/Clock/40.png"/>
+            <BitmapImage x:Key="Clock_35" UriSource="Pictures/Clock/35.png"/>
+            <BitmapImage x:Key="Clock_30" UriSource="Pictures/Clock/30.png"/>
+            <BitmapImage x:Key="Clock_25" UriSource="Pictures/Clock/25.png"/>
+            <BitmapImage x:Key="Clock_20" UriSource="Pictures/Clock/20.png"/>
+            <BitmapImage x:Key="Clock_15" UriSource="Pictures/Clock/15.png"/>
+            <BitmapImage x:Key="Clock_10" UriSource="Pictures/Clock/10.png"/>
+            <BitmapImage x:Key="Clock_5" UriSource="Pictures/Clock/5.png"/>
+</ResourceDictionary>
     </Application.Resources>
 </Application>

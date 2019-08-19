@@ -36,12 +36,16 @@ D:\Dwarfs_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\Dwarfs.csprojAssemblyReference.cac
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\bin\Debug\Dwarfs.exe.config
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\bin\Debug\Dwarfs.exe
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\bin\Debug\Dwarfs.pdb
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\Dwarfs.csprojAssemblyReference.cache
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\UC_ControlArea.g.cs
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\UC_Field.g.cs
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\MainWindow.g.cs
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\App.g.cs
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\Dwarfs_MarkupCompile.cache
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\Dwarfs_MarkupCompile.lref
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\App.baml
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\Styles\Slider_Styles.baml
+C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\UC_ControlArea.baml
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\UC_Field.baml
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\MainWindow.baml
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\Styles\Field_Styles.baml
@@ -52,4 +56,3 @@ C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarf
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\Dwarfs.csproj.CoreCompileInputs.cache
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\Dwarfs.exe
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\Dwarfs.pdb
-C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\obj\Debug\Dwarfs.csprojAssemblyReference.cache

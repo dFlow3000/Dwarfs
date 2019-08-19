@@ -20,6 +20,8 @@ namespace Dwarfs
     /// </summary>
     public partial class MainWindow : Window
     {
+        public UserControl uc_Field;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,9 +29,11 @@ namespace Dwarfs
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            UserControl uc_Field = new UC_Field();
+            uc_Field = new UC_Field();
             ConCont_Field.Content = uc_Field;
-            Game game = new Game();
+            UserControl uc_ControlArea = new UC_ControlArea();
+            ConCont_ControlArea.Content = uc_ControlArea;
+            Game game = new Game(uc_ControlArea, uc_Field, this);
         }
 
         private void BTN_TB_CLOSE_Click(object sender, RoutedEventArgs e)

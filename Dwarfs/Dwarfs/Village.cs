@@ -18,5 +18,11 @@ namespace Dwarfs
             wallLenght = i_wallLenght;
         }
 
+        public void VillageMine(int goldMiningRate, int stoneMiningRate, ref int actGold, ref int actStone)
+        {
+            actGold += goldMiningRate;
+            actStone += stoneMiningRate;
+        }
+
     }
 }

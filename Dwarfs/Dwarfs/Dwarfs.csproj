@@ -58,13 +58,25 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Clock.cs" />
     <Compile Include="Const.cs" />
     <Compile Include="Coords.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameField.cs" />
     <Compile Include="Part.cs" />
+    <Compile Include="UC_ControlArea.xaml.cs">
+      <DependentUpon>UC_ControlArea.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Village.cs" />
     <Compile Include="VillageGenerator.cs" />
+    <Page Include="Styles\Slider_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UC_ControlArea.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UC_Field.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -165,6 +177,43 @@
     <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Goblin_Land_1.png" />
     <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Goblin_Land_2.png" />
     <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Village_Ground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Clock\10.png" />
+    <Resource Include="Pictures\Clock\15.png" />
+    <Resource Include="Pictures\Clock\20.png" />
+    <Resource Include="Pictures\Clock\25.png" />
+    <Resource Include="Pictures\Clock\30.png" />
+    <Resource Include="Pictures\Clock\35.png" />
+    <Resource Include="Pictures\Clock\40.png" />
+    <Resource Include="Pictures\Clock\45.png" />
+    <Resource Include="Pictures\Clock\5.png" />
+    <Resource Include="Pictures\Clock\50.png" />
+    <Resource Include="Pictures\Clock\55.png" />
+    <Resource Include="Pictures\Clock\60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\ControlArea_Backgrounds\Clock_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\ControlArea_Backgrounds\ControlArea_mid.png" />
+    <Resource Include="Pictures\Background\ControlArea_Backgrounds\ControlArea_top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Slider\Thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Minig_Resources\GoldMining.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Minig_Resources\GoldMiningMultiStack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Minig_Resources\Gold_Comic.png" />
+    <Resource Include="Pictures\Minig_Resources\Stone_Comic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Minig_Resources\Recovery_Comic.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
