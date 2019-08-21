@@ -272,6 +272,37 @@
         </Style.Triggers>
     </Style>
 
+    <Style x:Key="Goblin_Field_Button" TargetType="Button">
+        <Setter Property="FontFamily" Value="Arial"/>
+        <Setter Property="Background">
+            <Setter.Value>
+                <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/Goblin.png"/>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderThickness="1">
+                        <Border.BorderBrush>
+                            <SolidColorBrush Color="Black"/>
+                        </Border.BorderBrush>
+                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background">
+                    <Setter.Value>
+                        <ImageBrush ImageSource="/Dwarfs;component/Pictures/Background/Gamefield_Backgrounds/Goblin.png"/>
+                    </Setter.Value>
+                </Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
 
 
 </ResourceDictionary>

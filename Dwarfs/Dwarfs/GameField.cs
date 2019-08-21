@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace Dwarfs
 {
-    class GameField
+    public class GameField
     {
         public Part[,] Grid = new Part[Const.GameFieldLength , Const.GameFieldLength];
 

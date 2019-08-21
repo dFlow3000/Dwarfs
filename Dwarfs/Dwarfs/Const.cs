@@ -21,6 +21,10 @@ namespace Dwarfs
         public const string Type_Stone_Wall = "Stone_Wall";
         public const string Type_Village_Ground = "Village_Ground";
         public const string Type_Goblin_Land = "Goblin_Land";
+        public const string Type_Goblin = "Goblin";
+        // Level
+        public const int Total_Amount_of_Levels = 4;
+
 
     }
 }

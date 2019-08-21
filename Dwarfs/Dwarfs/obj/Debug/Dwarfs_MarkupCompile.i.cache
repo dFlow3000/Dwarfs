@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\dawo\Documents\DaWo\Mitschrift_OTH\ProgA\Dwarf_Repo\Dwarfs\Dwarfs\Dwarfs\App.xaml
-6-1476563914
+9-514251479
 
-19258692060
+22952743735
 16953295066
-Styles\Slider_Styles.xaml;UC_ControlArea.xaml;UC_Field.xaml;MainWindow.xaml;Styles\Field_Styles.xaml;Styles\Titelbar_Styles.xaml;
+Styles\Clock_Styles.xaml;Styles\Label_Styles.xaml;Styles\Slider_Styles.xaml;Styles\Upgrade_Button_Styles.xaml;UC_ControlArea.xaml;UC_Field.xaml;MainWindow.xaml;Styles\Field_Styles.xaml;Styles\Titelbar_Styles.xaml;
 
-True
+False
 

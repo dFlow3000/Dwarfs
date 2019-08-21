@@ -21,6 +21,7 @@ namespace Dwarfs
     public partial class MainWindow : Window
     {
         public UserControl uc_Field;
+        public Game game;
 
         public MainWindow()
         {
@@ -33,7 +34,7 @@ namespace Dwarfs
             ConCont_Field.Content = uc_Field;
             UserControl uc_ControlArea = new UC_ControlArea();
             ConCont_ControlArea.Content = uc_ControlArea;
-            Game game = new Game(uc_ControlArea, uc_Field, this);
+            game = new Game(uc_ControlArea, uc_Field, this);
         }
 
         private void BTN_TB_CLOSE_Click(object sender, RoutedEventArgs e)

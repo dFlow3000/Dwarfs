@@ -63,13 +63,28 @@
     <Compile Include="Coords.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="GameField.cs" />
+    <Compile Include="Goblin.cs" />
+    <Compile Include="Level.cs" />
+    <Compile Include="LevelManager.cs" />
     <Compile Include="Part.cs" />
     <Compile Include="UC_ControlArea.xaml.cs">
       <DependentUpon>UC_ControlArea.xaml</DependentUpon>
     </Compile>
     <Compile Include="Village.cs" />
     <Compile Include="VillageGenerator.cs" />
+    <Page Include="Styles\Clock_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Label_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Styles\Slider_Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Styles\Upgrade_Button_Styles.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,6 +138,7 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <Resource Include="Fonts\DALEK\DALEK___.ttf" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -146,12 +162,6 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Titelbar_Backgrounds\Close_Small_Highlite_MouseOver_Background.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Pictures\Background\Main_Window_Backgrounds\Stone.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Pictures\Background\Main_Window_Backgrounds\comic_Mini.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Background\Main_Window_Backgrounds\pexels-photo-355747.png" />
@@ -179,18 +189,18 @@
     <Resource Include="Pictures\Background\Gamefield_Backgrounds\Type_Village_Ground.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Pictures\Clock\10.png" />
-    <Resource Include="Pictures\Clock\15.png" />
-    <Resource Include="Pictures\Clock\20.png" />
-    <Resource Include="Pictures\Clock\25.png" />
-    <Resource Include="Pictures\Clock\30.png" />
-    <Resource Include="Pictures\Clock\35.png" />
-    <Resource Include="Pictures\Clock\40.png" />
-    <Resource Include="Pictures\Clock\45.png" />
-    <Resource Include="Pictures\Clock\5.png" />
-    <Resource Include="Pictures\Clock\50.png" />
-    <Resource Include="Pictures\Clock\55.png" />
-    <Resource Include="Pictures\Clock\60.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\10.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\15.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\20.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\25.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\30.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\35.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\40.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\45.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\5.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\50.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\55.png" />
+    <Resource Include="Pictures\Clock\Sun_Clock\60.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Background\ControlArea_Backgrounds\Clock_Background.png" />
@@ -214,6 +224,34 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Pictures\Minig_Resources\Recovery_Comic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Upgrades\GoldMine_Upgrade.png" />
+    <Resource Include="Pictures\Upgrades\StoneQuarry_Upgrade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Upgrades\MOUSEOVER_GoldMine_Upgrade.png" />
+    <Resource Include="Pictures\Upgrades\MOUSEOVER_StoneQuarry_Upgrade.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Clock\Digital_Clock_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Clock\Digital_Clock_Pause.png" />
+    <Resource Include="Pictures\Clock\Digital_Clock_Play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Clock\Digital_Clock_Label_Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Clock\Night_Alarm_OFF.png" />
+    <Resource Include="Pictures\Clock\Night_Alarm_ON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\Main_Window_Backgrounds\Night_pexels-photo-355747.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Pictures\Background\Gamefield_Backgrounds\Goblin.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,12 +8,15 @@ namespace Dwarfs
 {
     class VillageGenerator
     {
+        public static Random rnd = new Random();
         public static void Generate_Village(Village villageTemplate, Part[,] field)
         {
 
             BuildTheWalls(villageTemplate, field);
             FillVillageGround(villageTemplate, field);
             SetBase(villageTemplate, field);
+            SetGoldMines(villageTemplate, field);
+            SetStoneQuarrys(villageTemplate, field);
 
 
         }
@@ -50,8 +53,34 @@ namespace Dwarfs
 
         private static void SetGoldMines(Village villageTemplate, Part[,] field)
         {
-
+            for(int i = 0; i < villageTemplate.goldMineLevel; i++)
+            {
+                int x = 0;
+                int y = 0;
+                do
+                {
+                    x = rnd.Next(villageTemplate.startCorner[0] + 1, villageTemplate.startCorner[0] + villageTemplate.wallLenght);
+                    y = rnd.Next(villageTemplate.startCorner[1] + 1, villageTemplate.startCorner[1] + villageTemplate.wallLenght);
+                } while (field[x, y].GetType() != Const.Type_Village_Ground);
+                field[x, y].SetType(Const.Type_Gold_Mine);
+            }
         }
+
+        private static void SetStoneQuarrys(Village villageTemplate, Part[,] field)
+        {
+            for (int i = 0; i < villageTemplate.stoneMineLevel; i++)
+            {
+                int x = 0;
+                int y = 0;
+                do
+                {
+                    x = rnd.Next(villageTemplate.startCorner[0] + 1, villageTemplate.startCorner[0] + villageTemplate.wallLenght);
+                    y = rnd.Next(villageTemplate.startCorner[1] + 1, villageTemplate.startCorner[1] + villageTemplate.wallLenght);
+                } while (field[x, y].GetType() != Const.Type_Village_Ground);
+                field[x, y].SetType(Const.Type_Stone_Quarry);
+            }
+        }
+
 
     }
 }

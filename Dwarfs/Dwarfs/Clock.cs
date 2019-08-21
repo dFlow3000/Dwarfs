@@ -11,39 +11,34 @@ namespace Dwarfs
 {
     class Clock
     {
-        private Image clock_Img;
+        private Label clock_Label;
         private int secTick;
+        public bool nightTime;
 
         public Clock()
         {
-            clock_Img = UC_ControlArea.Clock_Img;
-            secTick = 60;
+            clock_Label = UC_ControlArea.DigitalClock;
+            secTick = 0;
+            nightTime = false;
         }
 
         public void Clock_Tick(ref int actDay)
         {
-            bool visibleTick = false;
-            switch(secTick)
+            if(secTick == 0)
             {
-                case 60: visibleTick = true; break;
-                case 55: visibleTick = true; break;
-                case 50: visibleTick = true; break;
-                case 45: visibleTick = true; break;
-                case 40: visibleTick = true; break;
-                case 35: visibleTick = true; break;
-                case 30: visibleTick = true; break;
-                case 25: visibleTick = true; break;
-                case 20: visibleTick = true; break;
-                case 15: visibleTick = true; break;
-                case 10: visibleTick = true; break;
-                case 5:  visibleTick = true; break;
-                case 0:  secTick = 60; actDay++; visibleTick = true; break;
+                nightTime = false;
+                secTick = 60;
+                clock_Label.Content = "01:00";
+            } else
+            {
+                clock_Label.Content = "00:" + (secTick < 10 ? "0" + secTick.ToString() : secTick.ToString());
             }
 
-            if(visibleTick)
+            if(secTick <= 45 && secTick >= 1)
             {
-                clock_Img.Source = (ImageSource)Application.Current.Resources["Clock_" + secTick.ToString()];
+                nightTime = true;
             }
+
             secTick--;
         }
     }

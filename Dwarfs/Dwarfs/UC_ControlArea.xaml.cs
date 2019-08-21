@@ -20,8 +20,9 @@ namespace Dwarfs
     /// </summary>
     public partial class UC_ControlArea : UserControl
     {
-        public static Image Clock_Img;
-
+        public static Game game;
+        public static Image NightAlarm;
+        public static Label DigitalClock;
         public static Label BaseStage;
         public static Label Days;
         public static Label ResourcePoints;
@@ -38,7 +39,8 @@ namespace Dwarfs
         public UC_ControlArea()
         {
             InitializeComponent();
-            Clock_Img = IMG_Clock;
+            DigitalClock = LBL_Digital_Clock_OUT;
+            NightAlarm = IMG_Clock_Alarm; 
             BaseStage = LBL_BaseStage_Out;
             Days = LBL_Days_Out;
             ResourcePoints = LBL_ResourcePoints_Out;
@@ -89,6 +91,32 @@ namespace Dwarfs
                     LBL_GoldMinigValue_Out.Content = Gold_Slider.Value.ToString();
                     LBL_StoneMinigValue_Out.Content = Math.Round(Stone_Slider.Value).ToString();
                 }
+            }
+        }
+
+        private void BTN_TEST_SWITCH_LEVEL_Click(object sender, RoutedEventArgs e)
+        {
+            if (Convert.ToInt32(LBL_BaseStage_Out.Content) < 4)
+            {
+                LBL_BaseStage_Out.Content = (Convert.ToInt32(LBL_BaseStage_Out.Content) + 1).ToString();
+            } else
+            {
+                LBL_BaseStage_Out.Content = "1";
+            }
+        }
+
+        private void BTN_CLOCK_PLAYnPAUSE_Click(object sender, RoutedEventArgs e)
+        {
+            if(((Button)sender).Uid == "Play")
+            {
+                game.mainTimer.Stop();
+                BTN_CLOCK_PLAYnPAUSE.Style = (Style)Application.Current.Resources["DigitalClock_Play_Button"];
+                ((Button)sender).Uid = "Pause";
+            } else if (((Button)sender).Uid == "Pause")
+            {
+                game.mainTimer.Start();
+                BTN_CLOCK_PLAYnPAUSE.Style = (Style)Application.Current.Resources["DigitalClock_Pause_Button"];
+                ((Button)sender).Uid = "Play";
             }
         }
     }

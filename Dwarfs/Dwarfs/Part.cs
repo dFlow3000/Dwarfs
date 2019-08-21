@@ -8,7 +8,7 @@ using System.Windows;
 
 namespace Dwarfs
 {
-    class Part
+    public class Part
     {
         Button button = new Button();
         Coords Coords;
@@ -39,6 +39,7 @@ namespace Dwarfs
                 case Const.Type_Stone_Wall: styleName = Const.Type_Stone_Wall; break;
                 case Const.Type_Village_Ground: styleName = Const.Type_Village_Ground; break;
                 case Const.Type_Goblin_Land: styleName = Const.Type_Goblin_Land; break;
+                case Const.Type_Goblin: styleName = Const.Type_Goblin; break;
             }
 
             button.Style = (Style)Application.Current.Resources[styleName + "_Field_Button"];
